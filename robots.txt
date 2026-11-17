@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://poetdium.github.io/poetdium/sitemap.xml
