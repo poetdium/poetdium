@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>poetdium - the poet and the podium</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family: Georgia, serif;}
+  body{background:#0a0a0a;color:#fff;}
+  .hero{
+    height:90vh;
+    background:url('banner.jpg') center/cover no-repeat;
+    display:flex; flex-direction:column; justify-content:center; align-items:center;
+    text-align:center; position:relative;
+  }
+  .hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.25);}
+  .hero-content{position:relative;z-index:2;}
+  .dk{position:absolute;top:20px;left:20px;z-index:3;font-size:13px;letter-spacing:2px;text-transform:uppercase;opacity:0.9}
+  .dk b{color:#D4A95C;}
+  .btn{display:inline-block;margin-top:25px;padding:14px 28px;background:#D4A95C;color:#000;text-decoration:none;font-weight:bold;border-radius:30px;}
+  .btn2{border:1px solid #fff;color:#fff;background:transparent;margin-left:10px;}
+  section{padding:60px 20px;max-width:1000px;margin:auto;text-align:center;}
+  h2{font-size:32px;margin-bottom:10px;}
+  h2 span{color:#D4A95C;}
+  p{color:#bbb;line-height:1.6;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:30px;}
+  .card{background:#151515;border:1px solid #222;border-radius:15px;padding:20px;}
+  .card img{width:100%;height:280px;object-fit:cover;border-radius:10px;background:#333;}
+  .card h3{margin:15px 0 5px;}
+  .card small{color:#D4A95C;}
+  .form-box{background:#111;border:1px solid #D4A95C;border-radius:15px;padding:30px;margin-top:30px;}
+  input,select,textarea{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #333;background:#1a1a1a;color:#fff;}
+  button{background:#D4A95C;color:#000;padding:14px 30px;border:none;border-radius:30px;font-weight:bold;cursor:pointer;width:100%;}
+  footer{padding:30px;text-align:center;color:#777;font-size:13px;border-top:1px solid #222;}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="dk">DK <b>Online</b> presents</div>
+  <div class="hero-content">
+    <p style="letter-spacing:3px;text-transform:uppercase;font-size:13px;">Accra, Ghana • Season 1</p>
+    <h1 style="font-size:18px;margin-top:80px;opacity:0;">poetdium</h1>
+    <!-- poetdium text is already in banner image -->
+    <div style="margin-top:220px;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSecbsUCGswOMvyBovUUcr7Sns-C8sp6ap7xZiKLQ9Taw_0lQA/viewform" target="_blank" class="btn">REGISTER TO PERFORM</a>
+      <a href="#poets" class="btn btn2">MEET THE POETS</a>
+    </div>
+  </div>
+</div>
+
+<section id="poets">
+  <h2>Season 1 <span>Poets</span></h2>
+  <p>The poet and the podium. One chair, one mic, one truth.</p>
+  <div class="grid">
+    <div class="card">
+      <img src="stage.jpg" alt="poet">
+      <h3>POET 1 — COMING SOON</h3>
+      <small>@poetdium</small>
+      <p style="margin-top:10px;">Your bio here. 2 lines. Style, city.</p>
+    </div>
+    <div class="card">
+      <img src="stage.jpg" alt="poet">
+      <h3>POET 2 — COMING SOON</h3>
+      <small>@poetdium</small>
+      <p style="margin-top:10px;">Your bio here. 2 lines. Style, city.</p>
+    </div>
+    <div class="card">
+      <img src="stage.jpg" alt="poet">
+      <h3>POET 3 — COMING SOON</h3>
+      <small>@poetdium</small>
+      <p style="margin-top:10px;">Your bio here. 2 lines. Style, city.</p>
+    </div>
+  </div>
+</section>
+
+<section id="register">
+  <h2>Register to <span>Perform</span></h2>
+  <p>Fill this and we will contact you for audition.</p>
+  <div class="form-box">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSecbsUCGswOMvyBovUUcr7Sns-C8sp6ap7xZiKLQ9Taw_0lQA/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" style="background:#111;border-radius:10px;">Loading…</iframe>
+    <p style="margin-top:15px;font-size:13px;">If form doesn't load, <a href="https://docs.google.com/forms/d/e/1FAIpQLSecbsUCGswOMvyBovUUcr7Sns-C8sp6ap7xZiKLQ9Taw_0lQA/viewform" target="_blank" style="color:#D4A95C;">click here to open in Google Forms</a><br>Or WhatsApp us directly: DK Online</p>
+  </div>
+</section>
+
+<footer>
+  poetdium © 2026 • DK Online • God's Purpose<br>
+  Follow @poetdium on TikTok & Instagram • Full episodes on DKTV
+</footer>
+
+</body>
+</html>
